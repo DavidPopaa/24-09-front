@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import Axios from 'axios'
+import React ,{useEffect, useState} from "react"
+import Home from './Home'
+import Login from './Components/Login'
+import Books from './Components/Books'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+   const [dataaa,setData] = useState(null)
+
+   useEffect(() => {
+    Axios.get("http://localhost:8000")
+    .then(res => {setData(res.data)})
+    .catch(err => console.log(err))
+   },[])
+   
+   const [token, setToken] = useState("")
+  
+   const userLogin = (tokennn) => {
+        setToken(tokennn)
+       }
+
+    return <div className="App">
+            {dataaa && <Home data={dataaa}/>}
+            <br></br>
+            <Login userLogin={userLogin}/>
+            <Books token={token}/>
+           </div>
+                            
 }
 
 export default App;
