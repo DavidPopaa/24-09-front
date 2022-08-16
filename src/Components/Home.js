@@ -1,8 +1,8 @@
 import React from 'react';
 
+
 const Home = ({data}) => {
-    return (
-        
+    return (  
         <div className='firstClass'>
             {data.map((data) => (
                 <div key={data.id}>
@@ -13,9 +13,7 @@ const Home = ({data}) => {
                 <h1>{data.dist4}</h1>
                 </div>
             ))}
-       
-       </div>
-       
+       </div> 
     );
 };
 

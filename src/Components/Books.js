@@ -1,9 +1,11 @@
 import React, {Component} from 'react';
 
+
 class Books extends Component {
     state = {
         books: []
     }
+
 
     loadBooks = () => {
         fetch("http://127.0.0.1:8000/accounts/books/", {
@@ -17,6 +19,7 @@ class Books extends Component {
         .catch(err => console.log(err))
     }
 
+
     render() {
         return (
             <div>
@@ -28,7 +31,6 @@ class Books extends Component {
             </div>
         );
     }
-   
 };
 
 export default Books;
