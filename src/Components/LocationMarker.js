@@ -7,6 +7,7 @@ function LocationMarker({ lat, lng, onClick, id }) {
     return (
         <div onClick={onClick}>
             <Icon icon={locationIcon} className="location-icon"/>
+
         </div>
     );
 }

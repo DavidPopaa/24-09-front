@@ -21,6 +21,9 @@ export const AuthProvider = ({children}) => {
             headers: {"Content-Type": "application/json"},
             body:JSON.stringify({'username':e.target.username.value, 'password':e.target.password.value})
         })
+        e.target.username.value = null
+        e.target.password.value = null
+
     }
 
 
@@ -45,6 +48,8 @@ export const AuthProvider = ({children}) => {
         }
         console.log('data:',data)
         console.log('response:',response)
+        e.target.username.value = null
+        e.target.password.value = null
     }
 
 

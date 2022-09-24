@@ -11,6 +11,38 @@
     />
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpafMqDqq99nwN96bQUVWBdwu4Dm3UxmA"></script>
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+   
+
+    <script>
+      var x=document.getElementById('login');
+  var y=document.getElementById('register');
+  var z=document.getElementById('btn');
+  function register()
+  {
+    x.style.left='-400px';
+    y.style.left='50px';
+    z.style.left='110px';
+  }
+  function login()
+  {
+    x.style.left='50px';
+    y.style.left='450px';
+    z.style.left='0px';
+  }
+</script>
+<script>
+      var modal = document.getElementById('login-form');
+      window.onclick = function(event) 
+      {
+          if (event.target == modal) 
+          {
+              modal.style.display = "none";
+          }
+      }
+  </script>
+
+
+
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/

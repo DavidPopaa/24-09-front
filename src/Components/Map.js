@@ -1,11 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import GoogleMapReact from 'google-map-react';
 import LocationMarker from './LocationMarker';
 
 
 function Map({ center }) {
     const zoom = 7
-
 
     return (
         <div className='MapContainer'>
@@ -14,6 +13,7 @@ function Map({ center }) {
             center = {center}   
             zoom = {zoom}>
             <LocationMarker lat={46.74527} lng={23.59189}/>
+            {/* <LocationMarker lat={47.676054} lng={26.110227}/>   */}
             </GoogleMapReact>
         </div>
     );

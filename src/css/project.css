@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Arvo&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.full-page
+{
+    height: 100%;
+	width: 100%;
+	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("../images/foggy-pine-forest-background-vector.jpg");
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	
+}
+.navbar
+{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-top: 27px;
+	
+}
+
+nav
+{
+    flex: 1;
+    text-align: right;
+	padding-right: 15%;
+}
+nav ul 
+{
+    display: inline-block;
+    list-style: none;
+	
+}
+nav ul li
+{
+    display: inline-block;
+	margin: 35px;
+}
+nav ul li a
+{
+    text-decoration: none;
+    font-size: 21px;
+    color: white;
+	font-family: 'Roboto', sans-serif;
+}
+nav ul li button
+{
+    font-size: 21px;
+    color: #3b5441;
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+	font-family: 'Roboto', sans-serif;
+}
+nav ul li button:hover
+{
+    color: #2F2F2F;
+}
+nav ul li a:hover
+{
+    color: #2F2F2F;
+}
+img{
+    opacity: .7;
+    width: 100px;
+    position: absolute;
+    top: 4%;
+    left: 2.63%;
+}
+a
+{
+    font-size: 30px;
+    font-family: monospace;
+    color: rgb(45, 65, 49);
+    text-decoration: none;
+}
+#login-form
+{
+    display: contents;
+}
+.form-box
+{
+    width:380px;
+	height:480px;
+	position:relative;
+	margin:2% auto;
+	background:rgba(173, 173, 173, 0.311);
+	padding:10px;
+    overflow: hidden;
+}
+.button-box
+{
+	width:220px;
+	margin:35px auto;
+	position:relative;
+	box-shadow: 0 0 20px 9px #8f8f8f85;
+	border-radius: 30px;
+}
+.toggle-btn
+{
+	padding:10px 30px;
+	cursor:pointer;
+	background:transparent;
+	border:0;
+	outline: none;
+	position: relative;
+
+}
+#btn
+{
+	top: 0;
+	left:0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: #97b9bc;
+	border-radius: 30px;
+	transition: .5s;
+}
+.input-group-login
+{
+	top: 150px;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+}
+.input-group-register
+{
+    top: 120px;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+}
+.input-field
+{
+	width: 100%;
+	padding:10px 0;
+	margin:5px 0;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom: 1px solid rgb(255, 255, 255);
+	outline:none;
+	background: transparent;
+}
+.submit-btn
+{
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: #3b5441;
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+	font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+	color: white;
+}
+.check-box
+{
+	margin: 30px 10px 34px 0;
+}
+span
+{
+	color:white;
+	font-size:17px;
+	bottom:72px;
+	position:absolute;
+	font-family: 'Roboto', sans-serif;
+}
+#login
+{
+	left:50px;
+}
+#login input
+{
+	color:rgb(255, 255, 255);
+	font-size:21;
+	font-family: 'Roboto', sans-serif;
+}
+::placeholder{
+    color: aliceblue;
+    font-size: 15px;
+}
+#register
+{
+	left:50px;
+}
+#register input
+{
+	color:white;
+	font-size: 21;
+	font-family: 'Roboto', sans-serif;
+}
+
+#loginname{
+	list-style: none;
+	top: 5px;
+	right: 5px;
+	text-decoration: none;
+    font-size: 37px;
+    color: white;
+	display: table-column;
+	border-radius: 10px;
+	font-family: 'Roboto', sans-serif;
+	background-color:rgba(173, 173, 173, 0.311);
+	padding: 15px;
+}
+#imag{
+	display:flex ;
+	align-items: center;
+	justify-content: center;
+	color: #3b5441;
+}
+#formbox1{
+	top: 8%;
+	color:white;
+	left: 37%;
+	font-size:17px;
+	position:absolute;
+	font-family: 'Roboto', sans-serif;
+}
+#formbox2{
+	top: 8%;
+	color:white;
+	left: 32%;
+	font-size:17px;
+	position:absolute;
+	font-family: 'Roboto', sans-serif;
+}
